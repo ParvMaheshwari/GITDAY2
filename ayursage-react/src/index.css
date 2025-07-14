@@ -2,30 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply m-0 font-sans bg-green-50 text-gray-800;
-  }
+/* Custom styles for better video display */
+.video-container {
+  max-width: 640px;
+  margin: 50px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-@layer components {
-  .nav-link {
-    @apply bg-green-400 text-green-900 px-4 py-2 rounded font-bold no-underline transition-all duration-300 hover:bg-orange-600 hover:text-white;
-  }
-  
-  .consult-link {
-    @apply bg-green-400 text-green-900 px-4 py-2 rounded font-bold no-underline transition-all duration-300 hover:bg-orange-600 hover:text-white;
-  }
-  
-  .hero-button {
-    @apply bg-green-600 text-white px-6 py-3 rounded border-none cursor-pointer hover:bg-green-700 transition-colors;
-  }
-  
-  .plant-card {
-    @apply bg-green-400/40 rounded-lg p-4 w-48 shadow-md text-center;
-  }
-  
-  .social-icon {
-    @apply w-5 h-5 mb-1;
-  }
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
 }
