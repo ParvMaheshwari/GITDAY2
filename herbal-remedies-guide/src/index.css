@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add hover effects for better interactivity */
+.video-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+}
